@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Code+Latin:wght@100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+@media only screen and (max-width: 717px) {
+    nav{
+        height: 100px;
+    }
+}
+
+@media only screen and (min-width: 521px) {
+    main {
+        padding: 100px 20px 14px 0px;
+        columns: 2;
+        text-align: left;
+    }
+    h1, p{
+        display: block;
+        text-align: left;
+
+    }
+    img#livro{
+        margin-left: auto;
+        height: 600px;
+        width: 500px;
+    }
+    p.frete{
+        display: block;
+        text-align: left;
+    }
+    button h1{
+        text-align: left;
+        margin: 0px;
+    }
+    
+}
+
+header, nav, footer{
+    display: flex;
+    background: #ffffff;
+}
+body{
+    max-height: 120vh;
+    margin: 3px;
+    flex: auto;
+    flex-wrap: wrap;
+}
+
+header{
+    flex: 1 1 100vh;
+    background-color: #FFFBED;
+}
+
+header #Logo{
+    flex: 0 1 200px;
+    background-color: antiquewhite;
+}
+header img{
+    margin: auto;
+    display: block;
+    width: 100px;
+    height: 100px;
+}
+
+nav{
+    max-height: 80px;
+    flex: 1 1 100px;
+    justify-content: flex-end;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFFBED;
+    box-shadow: 0px 3px 4px 0px black;
+}
+nav a{
+    margin: 5%;
+    font-size: 15pt;
+    
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+img#livro{
+    display: block;
+    margin: 20px auto;
+    height: 90%;
+    width: 90%;
+}
+main{
+    text-align: center;
+    padding-top: 10px;
+    display: block;
+}
+p{
+    padding: 5px 0px 5px 2px;
+}
+h1.titulo{
+    padding: 100px 0px 10px 0px;
+    font-family: "M PLUS Code Latin", monospace;
+    font-style: italic;
+    font-weight: 350;
+    
+}
+p.desconto{
+    color: red;
+    text-decoration: line-through;
+}
+p.preço{
+    color: green;
+}
+
+p.frete{
+    text-shadow: 2px 2px 2px black;
+    font-weight: bolder;
+    color: yellow;
+}
+
+button{
+    color: black;
+    background-color: white;
+    border-radius: 8px;
+    padding: 3px;
+    margin: 15px 0px;
+    font-family: "M PLUS Code Latin", monospace;
+    font-size: medium;
+    font-weight: 100;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+h2{
+    padding-top: 30px;
+}
+
+
+
+
+
+footer{
+    background-color: #FFFBED;
+    box-shadow: 0px -1px 4px 0px black;
+    padding-left: 10px;
+    color: rgb(0, 0, 0);
+    display: block;
+    margin-top: 50px;
+    
+}
+footer h1{
+    text-align: center;
+    font-family: pacifico;
+    font-weight: 100;
+    font-style: italic;
+    padding-bottom: 10px;
+}
+div.infos p{
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+div h3{
+    font-family: pacifico;
+    text-align: center;
+}
+
+div.infos{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: lighter;
+    font-style: normal;
+}
+
+div.footer-menu{
+    color: black;
+    padding: 3px 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+footer li{
+    list-style: none;
+    width: fit-content;
+}
+
+footer li:hover{
+    text-decoration: underline;
+}

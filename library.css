@@ -1,0 +1,202 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Code+Latin:wght@100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+@media only screen and (max-width: 923px) {
+	main{
+	height: calc(100vh - 330px)
+    }
+    aside{
+        flex: 1 1 100vw;
+        height: 100px;
+    }
+}
+
+@media only screen and (max-width: 717px) {
+    nav{
+        height: 100px;
+    }
+    main{
+        height: calc(100vh - 436px);
+    }
+}
+@media only screen and (min-width: 1024px) {
+    main {
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 20px; /* Adiciona algum espaço ao redor */
+    }
+
+    div.livro {
+        flex: 1 1 calc(25% - 40px); /* Exibe 4 itens por linha */
+    }
+
+    section img{
+        min-width: 98.5vw;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: aqua;
+        height: 300px;
+    }
+}
+@media only screen and (max-width: 768px) {
+    main {
+        min-height: 710px;
+    }
+}
+
+header, nav, main, aside, footer{
+    display: flex;
+    background: #ffffff;
+}
+body{
+    max-height: 120vh;
+    margin: 3px;
+    flex: auto;
+    flex-wrap: wrap;
+}
+
+header{
+    flex: 1 1 100vh;
+    background-color: #FFFBED;
+}
+
+header #Logo{
+    flex: 0 1 200px;
+    background-color: antiquewhite;
+}
+header img{
+    margin: auto;
+    display: block;
+    width: 100px;
+    height: 100px;
+}
+
+nav{
+    max-height: 80px;
+    flex: 1 1 100px;
+    justify-content: flex-end;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFFBED;
+    box-shadow: 0px 3px 4px 0px black
+}
+nav a{
+    margin: 5%;
+    font-size: 15pt;
+
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+section img{
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 97.3vw;
+    background-color: aqua;
+    height: 300px;
+    padding: 5px;
+}
+
+main{
+    flex: 1 1 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+    
+}
+main img{
+    width: 100px;
+}
+
+div.livro{
+    max-width: 140px;
+    height: 210px;
+    padding: 20px;
+    border-radius: 10px;
+    border: rgba(0, 0, 0, 0.815) solid 1.9px;
+    transition: 0.8s;
+    margin: 15px 15px; 
+    flex: 1 1 calc(33.33% - 40px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+div.livro:hover{
+    border-color: #FFFBED;
+    border-style: solid;
+    box-shadow: -3px 3px 12px 0px black;
+}
+
+.titulo{
+    font-size: 15px;
+    font-family: "M PLUS Code Latin", monospace;
+}
+
+.preço{
+    color: green;
+    font-size: 11px;
+}
+
+footer{
+    background-color: #FFFBED;
+    box-shadow: 0px -1px 4px 0px black;
+    padding-left: 10px;
+    color: rgb(0, 0, 0);
+    display: block;
+    margin-top: 100px;
+    
+}
+footer h1{
+    font-family: pacifico;
+    font-weight: 100;
+    font-style: italic;
+    padding-bottom: 10px;
+}
+
+div h3{
+    font-family: pacifico;
+    text-align: center;
+}
+
+div.infos p{
+    padding-bottom: 10px;
+}
+
+div.infos{
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: lighter;
+    font-style: normal;
+}
+
+div.footer-menu{
+    color: black;
+    padding: 3px 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+footer li{
+    list-style: none;
+}
+
+footer li:hover{
+    text-decoration: underline;
+}
+
+
+
+
