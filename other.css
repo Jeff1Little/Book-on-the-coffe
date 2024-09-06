@@ -1,0 +1,177 @@
+header, nav, footer{
+    display: flex;
+    background: #ffffff;
+}
+/* Body*/
+body{
+    max-height: 120vh;
+    margin: 3px;
+    flex: auto;
+    flex-wrap: wrap;
+}
+/* Header*/
+header{
+    flex: 1 1 100vh;
+    background-color: #FFFBED;
+}
+
+header #Logo{
+    flex: 0 1 200px;
+    background-color: antiquewhite;
+}
+header img{
+    margin: auto;
+    display: block;
+    width: 100px;
+    height: 100px;
+}
+
+nav{
+    max-height: 80px;
+    flex: 1 1 100px;
+    justify-content: flex-end;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFFBED;
+    box-shadow: 0px 3px 4px 0px black
+}
+nav a{
+    margin: 5%;
+    font-size: 15pt;
+
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+/* main nós*/
+img#nos{
+    width: 300px;
+    height: 300px;
+    margin: auto;
+    display: block;
+}
+main#nós{
+    text-align: center;
+}
+
+
+/* Formulario Contato*/
+main#contato{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.container {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    border: black solid 1px;
+   box-shadow: 0 0 9px 0px rgb(0 0 0 / 60%);
+    
+}
+
+h2 {
+    margin-bottom: 20px;
+    padding: 5px;
+}
+
+label {
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #333;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px 5px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    outline: none;
+    font-size: 16px;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #28a745;
+    color: white;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+.hidden {
+    display: none;
+}
+
+#confirmationMessage {
+    opacity: 0;
+    animation: fadeIn 1.5s forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+
+
+/* Footer*/
+footer{
+    background-color: #FFFBED;
+    box-shadow: 0px -1px 4px 0px black;
+    padding-left: 10px;
+    color: rgb(0, 0, 0);
+    display: block;
+    margin-top: 100px;
+    
+}
+footer h1{
+    font-family: pacifico;
+    font-weight: 100;
+    font-style: italic;
+    padding-bottom: 10px;
+}
+
+div h3{
+    font-family: pacifico;
+    text-align: center;
+}
+
+div.infos p{
+    padding-bottom: 10px;
+}
+
+div.infos{
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: lighter;
+    font-style: normal;
+}
+
+div.footer-menu{
+    color: black;
+    padding: 3px 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+footer li{
+    list-style: none;
+}
+
+footer li:hover{
+    text-decoration: underline;
+}
+

@@ -1,37 +1,50 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=M+PLUS+Code+Latin:wght@100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
+/*Global*/
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     
 }
-
 /*Responsividade*/
-@media only screen and (min-width: 1024px) {
-    main {
-        flex-wrap: wrap;
-        justify-content: space-around;
-        padding: 20px; /* Adiciona algum espaço ao redor */
-    }
-
-    div.livro {
-        flex: 1 1 calc(25% - 40px); /* Exibe 4 itens por linha */
-    }
-
-    section img{
-        min-width: 98.5vw;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-color: aqua;
-        height: 300px;
+@media only screen and (max-width: 717px) {
+    nav{
+        height: 100px;
     }
 }
+
+@media only screen and (min-width: 521px) {
+    main {
+        padding: 100px 20px 14px 0px;
+        columns: 2;
+        text-align: left;
+    }
+    h1, p{
+        display: block;
+        text-align: left;
+
+    }
+    img#livro{
+        margin-left: auto;
+        height: 600px;
+        width: 500px;
+    }
+    p.frete{
+        display: block;
+        text-align: left;
+    }
+    button h1{
+        text-align: left;
+        margin: 0px;
+    }
+    
+}
+
 /* Config gerais sobre o corpo*/
-header, nav, main, aside, footer{
+header, nav, footer{
     display: flex;
     background: #ffffff;
 }
@@ -42,6 +55,7 @@ body{
     flex: auto;
     flex-wrap: wrap;
 }
+
 /* Header*/
 header{
     flex: 1 1 100vh;
@@ -66,12 +80,12 @@ nav{
     justify-content: center;
     align-items: center;
     background-color: #FFFBED;
-    box-shadow: 0px 3px 4px 0px black
+    box-shadow: 0px 3px 4px 0px black;
 }
 nav a{
     margin: 5%;
     font-size: 15pt;
-
+    
 }
 a{
     text-decoration: none;
@@ -79,61 +93,58 @@ a{
 }
 
 
-/* banner*/
-section img{
-    background-repeat: no-repeat;
-    background-size: cover;
-    max-width: 97.3vw;
-    background-color: aqua;
-    height: 300px;
-    padding: 5px;
-}
-
 /* Main*/
+img#livro{
+    display: block;
+    margin: 20px auto;
+    height: 90%;
+    width: 90%;
+}
 main{
-    flex: 1 1 auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    
-    
-}
-main img{
-    width: 100px;
-}
-
-div.livro{
-    max-width: 140px;
-    height: 210px;
-    padding: 20px;
-    border-radius: 10px;
-    border: rgba(0, 0, 0, 0.815) solid 1.9px;
-    transition: 0.8s;
-    margin: 15px 15px; 
-    flex: 1 1 calc(33.33% - 40px);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-}
-
-div.livro:hover{
-    border-color: #FFFBED;
-    border-style: solid;
-    box-shadow: -3px 3px 12px 0px black;
-}
-
-.titulo{
-    padding-top: 5px;
     text-align: center;
-    font-size: 15px;
+    padding-top: 10px;
+    display: block;
+}
+p{
+    padding: 5px 0px 5px 2px;
+}
+h1.titulo{
+    padding: 100px 0px 10px 0px;
     font-family: "M PLUS Code Latin", monospace;
+    font-style: italic;
+    font-weight: 350;
+    
+}
+p.desconto{
+    color: red;
+    text-decoration: line-through;
+}
+p.preço{
+    color: green;
 }
 
-.preço{
-    color: green;
-    font-size: 11px;
+p.frete{
+    text-shadow: 2px 2px 2px black;
+    font-weight: bolder;
+    color: yellow;
 }
+
+button{
+    background-color: #D5917D;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+h2{
+    padding-top: 30px;
+}
+
+
+
 
 /* Footer*/
 footer{
@@ -142,13 +153,18 @@ footer{
     padding-left: 10px;
     color: rgb(0, 0, 0);
     display: block;
-    margin-top: 100px;
+    margin-top: 50px;
     
 }
 footer h1{
+    text-align: center;
     font-family: pacifico;
     font-weight: 100;
     font-style: italic;
+    padding-bottom: 10px;
+}
+div.infos p{
+    text-align: center;
     padding-bottom: 10px;
 }
 
@@ -157,12 +173,7 @@ div h3{
     text-align: center;
 }
 
-div.infos p{
-    padding-bottom: 10px;
-}
-
 div.infos{
-    text-align: center;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: lighter;
     font-style: normal;
@@ -176,12 +187,9 @@ div.footer-menu{
 
 footer li{
     list-style: none;
+    width: fit-content;
 }
 
 footer li:hover{
     text-decoration: underline;
 }
-
-
-
-

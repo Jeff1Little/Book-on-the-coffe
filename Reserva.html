@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Reserva</title>
+    <link rel="stylesheet" href="Reserva.css">
+    <link rel="shortcut icon" href="Img/favicon.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <img src="Img/Logo Coffee.png" alt=""></img>
+    </header>
+    <nav>
+        <a href="Library.html">Inicio</a>
+        <a href="Reserva.html">Reserva</a>
+        <a href="Nós.html">Nós</a>
+        <a href="Contato.html">Contato</a>
+    </nav>
+    <div class="container">
+        <h2>Formulário de Reserva</h2>
+        <form id="reservation-form">
+            <label for="nome">Nome Completo:</label>
+            <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
+            <label for="data">Escolha a data:</label>
+            <input type="date" id="data" name="data" required
+            min="2024-10-01" max="2024-12-30">
+            <label for="hora">Escolha a hora:</label>
+            <input type="time" id="hora" name="hora" required
+            min="09:00" max="20:00">
+            <label for="pessoas">Número de Pessoas:</label>
+            <select id="pessoas" name="pessoas" required>
+                <option value="1">1 Pessoa</option>
+                <option value="2">2 Pessoas</option>
+                <option value="3">3 Pessoas</option>
+                <option value="4">4 Pessoas</option>
+                <option value="5">5 Pessoas</option>
+                <option value="6+">Mais de 5 Pessoas</option>
+            </select>
+            <input type="submit" value="Reservar">
+        </form>
+        <div class="success-message" id="success-message">
+            Reserva feita com sucesso!, iremos te enviar um email com mais informações.
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('reservation-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            setTimeout(function() {
+                const successMessage = document.getElementById('success-message');
+                successMessage.classList.add('show');
+                document.getElementById('reservation-form').reset();
+            }, 1000);
+        });
+    </script>
+    <footer>
+        <div class="infos">
+            <h1>Books on the Coffee</h1>
+            <p style="padding: 0px;">Desfrute momentos, saboreie histórias</p>
+        </div>
+        <div class="footer-menu">
+            <ul>
+             <li><a href="Library.html">Inicio</a></li>
+             <li><a href="#">Quem Somos</a></li>
+             <li><a href="#">Contato</a></li>
+            </ul>
+        </div>
+        <div class="infos">
+            <h3>Contato</h3>
+            <p>CNPJ: 68.378.709/0001-69</p>
+            <p><img style="padding: 0px 5px;" src="Img/location.png" alt="location">Avenida Professor Papini - Cidade Dutra, São Paulo - SP</p>
+        </div>
+    </footer>
+</body>
+</html>
