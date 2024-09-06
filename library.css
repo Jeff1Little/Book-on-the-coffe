@@ -83,8 +83,8 @@ a{
 section img{
     background-repeat: no-repeat;
     background-size: cover;
+    background-color: #ffffff;
     max-width: 97.3vw;
-    background-color: aqua;
     height: 300px;
     padding: 5px;
 }
