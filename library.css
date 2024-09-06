@@ -131,6 +131,7 @@ div.livro:hover{
 }
 
 .preço{
+    padding-top: 8px;
     color: green;
     font-size: 11px;
 }
