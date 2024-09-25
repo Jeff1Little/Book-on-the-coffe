@@ -22,12 +22,14 @@
         flex: 1 1 calc(25% - 40px); /* Exibe 4 itens por linha */
     }
 
+}
+@media only screen and (max-width: 1200x) {
+
     section img{
         min-width: 98.5vw;
         background-repeat: no-repeat;
         background-size: cover;
         background-color: rgb(255, 255, 255);
-        height: 300px;
     }
 }
 /* Config gerais sobre o corpo*/
@@ -80,13 +82,18 @@ a{
 
 
 /* banner*/
-section img{
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: #ffffff;
-    max-width: 97.3vw;
-    height: 300px;
-    padding: 5px;
+.ban{
+    margin-top: 5px;
+    display: flex   ;
+    margin: 0px;
+    max-width: 61.2vw;
+
+}
+.ban img{
+    margin-top: 5px;
+    display: block;
+    width: 160.6%;
+    height: 100%;
 }
 
 /* Main*/
