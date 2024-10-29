@@ -60,7 +60,7 @@ main#nós{
     max-width: 500px;
 }
 
-/* Formulario Contato*/
+/* Formulario Login*/
 main#contato{
     display: flex;
     justify-content: center;
@@ -85,6 +85,10 @@ h2 {
     margin-bottom: 20px;
     padding: 5px;
 }
+main p{
+    font-weight: bold;
+    font-size: 17px;
+}
 
 label {
     font-family: Arial, sans-serif;
@@ -102,6 +106,21 @@ input, textarea {
     outline: none;
     font-size: 16px;
 }
+p.cd{
+    margin-bottom: 5px;
+    font-style: bolder;
+}
+a.cd2{
+    color: blue;
+}
+a.cd2:hover{
+    text-decoration: underline;
+}
+
+a#logout{
+    color: red;
+
+}
 
 button {
     margin-top: 20px;
@@ -117,21 +136,6 @@ button {
 
 button:hover {
     background-color: #D5917D;
-}
-
-.hidden {
-    display: none;
-}
-
-#confirmationMessage {
-    opacity: 0;
-    animation: fadeIn 1.5s forwards;
-}
-
-@keyframes fadeIn {
-    to {
-        opacity: 1;
-    }
 }
 
 

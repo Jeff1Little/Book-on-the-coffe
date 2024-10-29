@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book on the Coffe</title>
+    <link rel="stylesheet" href="other2.css">
+    <link rel="shortcut icon" href="Img/favicon.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <img src="Img/Logo Coffee.png" alt=""></img>
+    </header>
+    <nav>
+        <a href="Library.html">Inicio</a>
+        <a href="Reserva.html">Reserva</a>
+        <a href="Nós.html">Nós</a>
+        <a href="Contato.html">Contato</a>
+    </nav>
+    <main id="Login">
+        <div class="container">
+            <form id="login-form">
+                <h2>Login</h2>
+                <label for="username">Usuário:</label>
+                <input type="text" id="username" name="username" required>
+    
+                <label for="password">Senha:</label>
+                <input type="password" id="password" name="" required>
+                <p class="cd">Não tem um login?</p>
+                <a class="cd2" href="#">Cadrastre-se</a>
+                <p></p>
+                <button type="submit">Logar</button>
+            </form>
+        </div>
+        <script>
+           document.getElementById('login-form').addEventListener('submit', function(event) {
+            event.preventDefault(); // Evita o envio do formulário
+            const username = document.getElementById('username').value;
+
+            // Armazena o nome do usuário e redireciona
+            localStorage.setItem('username', username);
+            window.location.href = 'welcome.html';
+        });
+        </script>
+    </main>
+    <footer>
+        <div class="infos">
+            <h1>Books on the Coffee</h1>
+            <p style="padding: 0px;">Desfrute momentos, saboreie histórias</p>
+        </div>
+        <div class="footer-menu">
+            <ul>
+             <li><a href="Library.html">Inicio</a></li>
+             <li><a href="Nós.html">Quem Somos</a></li>
+             <li><a href="Contato.html">Contato</a></li>
+            </ul>
+        </div>
+        <div class="infos">
+            <h3>Contato</h3>
+            <p>CNPJ: 68.378.709/0001-69</p>
+            <p><img style="padding: 0px 5px;" src="../Book-on-the-coffe/Img/location.png" alt="location">Avenida Professor Papini - Cidade Dutra, São Paulo - SP</p>
+            <p>Desenvolvido por <a href="https://github.com/Jeff1Little">Jeff Little</a></p>
+        </div>
+    </footer>
+</body>
+</html>

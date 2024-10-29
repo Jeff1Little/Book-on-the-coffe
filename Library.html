@@ -10,7 +10,7 @@
 <body>
     <header>
         <img src="Img/Logo Coffee.png" alt=""></img>
-    
+        <p><span id="username-display"></span></p>
     </header>
     <nav>
         <a href="Library.html">Inicio</a>
@@ -69,6 +69,11 @@
         </a>
        
     </main>
+    <script>
+        // Recupera o nome do usuário do local storage
+        const username = localStorage.getItem('username');
+        document.getElementById('username-display').textContent = username || 'Usuário';
+    </script>
     <footer>
         <div class="infos">
             <h1>Books on the Coffee</h1>
