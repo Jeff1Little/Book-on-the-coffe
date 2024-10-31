@@ -63,14 +63,14 @@ header img{
 nav#login{
     background-color: #FFFBED;
 }
-nav#login img{
+nav#login p img{
     height: 20px;
     margin-right: 8px;
 
 }
 nav#login a{
     margin: 0;
-    margin-left: 90%;
+    margin-left: 75%;
     
 }
 
