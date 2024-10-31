@@ -12,6 +12,11 @@
         <img src="../Img/Logo Coffee.png" alt=""></img>
     
     </header>
+    <nav id="login">
+        <a href="Login.html">
+            <p><img src="../Img/login.jpg" alt=""><span id="username-display"></span></p>
+        </a>
+    </nav>
     <nav>
         <a href="../Library.html">Inicio</a>
         <a href="../Reserva.html">Reserva</a>
@@ -30,6 +35,12 @@
         <h2>Descrição</h2>
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet ad cupiditate iure officiis, eligendi nobis, neque natus consectetur ea nam tenetur illum voluptate ut numquam quam ullam fuga! Ipsa, molestiae.</p>
     </main>
+    
+<script>
+    // Recupera o nome do usuário do local storage
+    const username = localStorage.getItem('username');
+    document.getElementById('username-display').textContent = username || 'Usuário';
+</script>
     <footer>
         <div class="infos">
             <h1>Books on the Coffee</h1>

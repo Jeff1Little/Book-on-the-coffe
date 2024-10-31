@@ -39,7 +39,7 @@ header img{
     width: 100px;
     height: 100px;
 }
-nav{
+nav#center{
     max-height: 80px;
     flex: 1 1 100px;
     justify-content: flex-end;
@@ -56,6 +56,23 @@ nav a{
 a{
     text-decoration: none;
     color: inherit;
+}
+nav#login{
+    background-color: #FFFBED;
+}
+nav#login a{
+    margin: 0;
+    margin-left: 89%;
+    padding-right: 8px;
+}
+span#username-display{
+    font-family: 'pacifico';
+
+}
+nav#login img{
+    height: 20px;
+    margin-right: 8px;
+
 }
 
 /* Formulario*/

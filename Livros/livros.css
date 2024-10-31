@@ -91,6 +91,23 @@ a{
     text-decoration: none;
     color: inherit;
 }
+nav#login{
+    background-color: #FFFBED;
+}
+nav#login a{
+    margin: 0;
+    margin-left: 89%;
+    padding-right: 8px;
+}
+span#username-display{
+    font-family: 'pacifico';
+
+}
+nav#login img{
+    height: 20px;
+    margin-right: 8px;
+
+}
 
 
 /* Main*/

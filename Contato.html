@@ -11,6 +11,11 @@
     <header>
         <img src="Img/Logo Coffee.png" alt=""></img>
     </header>
+    <nav id="login">
+        <a href="Login.html">
+            <p><img src="Img/login.jpg" alt=""><span id="username-display"></span></p>
+        </a>
+    </nav>
     <nav>
         <a href="Library.html">Inicio</a>
         <a href="Reserva.html">Reserva</a>
@@ -47,6 +52,11 @@
                 form.classList.add('hidden');
                 confirmationMessage.classList.remove('hidden');
             });
+
+               // Recupera o nome do usuário do local storage
+        const username = localStorage.getItem('username');
+        document.getElementById('username-display').textContent = username || 'Usuário';
+
         </script>
     </main>
     <footer>
