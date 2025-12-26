@@ -126,16 +126,21 @@ p{
 }
 h1.titulo{
     padding: 100px 0px 10px 0px;
-    font-family: "M PLUS Code Latin", monospace;
-    font-style: italic;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: normal;
     font-weight: 350;
+    text-align: center;
     
 }
 p.desconto{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: red;
     text-decoration: line-through;
+    text-align: center;
 }
 p.preço{
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: green;
 }
 

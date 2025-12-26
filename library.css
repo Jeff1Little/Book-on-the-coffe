@@ -1,7 +1,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Code+Latin:wght@100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 *{
     margin: 0;
@@ -150,10 +149,11 @@ div.livro:hover{
     padding-top: 5px;
     text-align: center;
     font-size: 15px;
-    font-family: "M PLUS Code Latin", monospace;
-}
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: normal;
 
 .preço{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     padding-top: 8px;
     color: green;
     font-size: 11px;
@@ -219,6 +219,3 @@ header p{
     padding-right: 15px;
     padding-top: 50px;
 }
-
-
-
